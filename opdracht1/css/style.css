@@ -1,16 +1,131 @@
-html{
-  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 3em;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+    font-family: 'Montserrat', sans-serif;
+
 }
-body{
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+
+/* Film sectie*/
+section h1 {
+    padding-left: 1em;
+}
+
+
+article.films {
+    display: flex;
+    width: 35em;
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    box-shadow: 5px 5px 10px grey;
+}
+
+article.films.liked {
+    background-color:lightgray;
+}
+
+article.films img {
+    width: 10em;
+
+}
+
+article.films div {
+    width: 22em;
+    padding-left: 2em;
+}
+
+article.films img.hart {
+    padding: 1em;
+    width: 3em;
+}
+
+article button {
+    background-color: white;
+    border: none;
+}
+
+article button.achtergrond{
+     background-color: lightgray;
+}
+
+/* Jouw films sectie */
+#div1 {
+    display: none;
+}
+
+#div1.cool{
+    display: block;
+}
+
+
+article.film1 {
+    display: flex;
+    width: 35em;
+    padding: 2em;
+    background-color: lightgray;
+    margin: 1em;
+    box-shadow: 5px 5px 10px grey;
+    opacity: 0 ; 
+    transition: opacity 1s;
+}
+
+article.jouwfilms img {
+    width: 10em;
+
+}
+
+article.jouwfilms div {
+    width: 22em;
+    padding-left: 2em;
+}
+
+article.jouwfilms img.hart {
+    padding: 1em;
+    width: 3em;
+}
+
+article.film1.yay {
+    opacity: 1;
+}
+
+/*film 2 */
+
+article.film2 {
+    display: flex;
+    width: 35em;
+    padding: 2em;
+    background-color: lightgray;
+    margin: 1em;
+    box-shadow: 5px 5px 10px grey;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+article.film2 img {
+    width: 10em;
+
+}
+
+article.film2 div {
+    width: 22em;
+    padding-left: 2em;
+}
+
+article.film2 img.hart {
+    padding: 1em;
+    width: 3em;
+}
+
+article.film2.yey {
+    opacity: 1;
 }
